@@ -1,0 +1,22 @@
+
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+/* Setting the root font-size in order to make the rest of the page easier to style using 'rem' since it will just be a multiple of 10px- this must the be in turn converted to percentage of default 16px in order for accessibility to work properly and make media queries much easier to write */ 
+html {
+    font-size: 62.5%; 
+    /* is eaual to 16px - defines 1rem*/
+    background-color: #1c1c1c;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    padding: 3rem;
+}
+body {
+    box-sizing: border-box;
+}

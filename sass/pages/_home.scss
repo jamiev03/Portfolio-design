@@ -8,4 +8,19 @@
     width: 100%;
     height: 60rem;
     background-size: cover;
+    position: relative;
+
+    &__text {
+        position: absolute;
+        top: 20rem;
+        left: 23rem;
+
+        &-h1 {
+            font-size: 8rem;
+        }
+
+        &-h3 {
+            font-size: 3rem;
+        }
+    }
 }

@@ -14,6 +14,13 @@
       margin-right: 3.5rem;
       color: #1c1c1c;
       font-size: 2rem; }
+    .nav__ul-li a:hover {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+      background-position: bottom;
+      background-repeat: repeat-x;
+      background-size: 20%;
+      border-bottom: 0;
+      padding-bottom: .3em; }
 
 .header-hero {
   background: -webkit-linear-gradient(110deg, #ff6464 50%, #5ac8fa 50%);
@@ -24,7 +31,16 @@
   background-repeat: no-repeat;
   width: 100%;
   height: 60rem;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
+  .header-hero__text {
+    position: absolute;
+    top: 20rem;
+    left: 23rem; }
+    .header-hero__text-h1 {
+      font-size: 8rem; }
+    .header-hero__text-h3 {
+      font-size: 3rem; }
 
 *,
 *::after,

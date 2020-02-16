@@ -1,3 +1,20 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem .5rem 2rem 3rem; }
+  .nav__logo-h2 {
+    font-size: 3.5rem;
+    font-weight: 700; }
+  .nav__ul {
+    display: flex;
+    list-style: none; }
+    .nav__ul-li a {
+      text-decoration: none;
+      margin-right: 3.5rem;
+      color: #1c1c1c;
+      font-size: 2rem; }
+
 .header-hero {
   background: -webkit-linear-gradient(110deg, #ff6464 50%, #5ac8fa 50%);
   background: -o-linear-gradient(110deg, #ff6464 50%, #5ac8fa 50%);
@@ -19,13 +36,13 @@
 /* Setting the root font-size in order to make the rest of the page easier to style using 'rem' since it will just be a multiple of 10px- this must the be in turn converted to percentage of default 16px in order for accessibility to work properly and make media queries much easier to write */
 html {
   font-size: 62.5%;
-  /* is eaual to 16px - defines 1rem*/
+  /* is eaual to 16px - defines 1rem*/ }
+
+body {
+  box-sizing: border-box;
   background-color: #1c1c1c;
-  font-family: "Lato", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  padding: 3rem; }
-
-body {
-  box-sizing: border-box; }
+  padding: 4rem; }

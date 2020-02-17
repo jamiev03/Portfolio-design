@@ -40,16 +40,24 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  padding: 5% 0; }
+  padding: 2rem 0 6rem 0; }
   .section__projects__cards .card {
-    position: relative; }
+    position: relative;
+    margin-bottom: 6rem; }
   .section__projects__cards .card .face.face1.active1 {
-    background-image: url("/img/amazon-box-looking-at-black-dell-laptop-2363482.jpg");
     background-position: center;
     background-size: cover;
     position: relative;
-    opacity: .4;
+    opacity: .8;
     transition: all .2s ease-out; }
+    .section__projects__cards .card .face.face1.active1.img-1 {
+      background-image: url("/img/amazon-box-looking-at-black-dell-laptop-2363482.jpg"); }
+    .section__projects__cards .card .face.face1.active1.img-2 {
+      background-image: url("/img/business-code-coding-computer-270632.jpg"); }
+    .section__projects__cards .card .face.face1.active1.img-3 {
+      background-image: url("/img/iphone-notebook-pen-working-34580.jpg"); }
+    .section__projects__cards .card .face.face1.active1.img-4 {
+      background-image: url("/img/person-looking-at-phone-and-at-macbook-pro-1181244.jpg"); }
     .section__projects__cards .card .face.face1.active1:hover {
       opacity: 1; }
   .section__projects__cards .card .face {
@@ -118,11 +126,28 @@
 
 .section__projects {
   margin-top: 8rem; }
-  .section__projects-h2 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: #fff;
-    text-align: center; }
+
+.section__skills__text p {
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  max-width: 50rem;
+  padding-left: 2.5rem;
+  font-size: 1.6rem; }
+
+.section__skills__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  color: #fff;
+  width: 90%;
+  margin: 6rem auto; }
+  .section__skills__list-item h3 {
+    margin: 2rem 0;
+    font-size: 1.8rem; }
+  .section__skills__list-item li {
+    font-size: 1.6rem; }
 
 *,
 *::after,
@@ -144,3 +169,11 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   padding: 4rem; }
+
+.h2-header {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 6rem;
+  margin-top: 1rem; }

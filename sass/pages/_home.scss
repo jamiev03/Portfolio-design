@@ -36,12 +36,34 @@
 
 .section__projects {
     margin-top: 8rem;
+}
 
-    &-h2 {
-        font-size: 3.5rem;
-        font-weight: 700;
-        color: #fff;
+.section__skills {
+
+    &__text p {
         text-align: center;
-        
+        margin: 0 auto;
+        color: white;
+        max-width: 50rem;
+        padding-left: 2.5rem;
+        font-size: 1.6rem;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        color: #fff;
+        width: 90%;
+        margin: 6rem auto;
+
+        &-item h3 {
+            margin: 2rem 0;
+            font-size: 1.8rem;
+        }
+
+        &-item li {
+            font-size: 1.6rem;
+        }
     }
 }

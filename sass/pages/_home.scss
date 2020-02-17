@@ -40,14 +40,6 @@
 
 .section__skills {
 
-    &__text p {
-        text-align: center;
-        margin: 0 auto;
-        color: white;
-        max-width: 50rem;
-        padding-left: 2.5rem;
-        font-size: 1.6rem;
-    }
     &__list {
         display: flex;
         justify-content: space-around;
@@ -55,7 +47,7 @@
         flex-wrap: wrap;
         color: #fff;
         width: 90%;
-        margin: 6rem auto;
+        margin: 3rem auto 15rem auto;
 
         &-item h3 {
             margin: 2rem 0;
@@ -66,4 +58,8 @@
             font-size: 1.6rem;
         }
     }
+}
+
+.section__about-me {
+    border: 1px solid white;
 }

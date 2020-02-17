@@ -127,14 +127,6 @@
 .section__projects {
   margin-top: 8rem; }
 
-.section__skills__text p {
-  text-align: center;
-  margin: 0 auto;
-  color: white;
-  max-width: 50rem;
-  padding-left: 2.5rem;
-  font-size: 1.6rem; }
-
 .section__skills__list {
   display: flex;
   justify-content: space-around;
@@ -142,12 +134,15 @@
   flex-wrap: wrap;
   color: #fff;
   width: 90%;
-  margin: 6rem auto; }
+  margin: 3rem auto 15rem auto; }
   .section__skills__list-item h3 {
     margin: 2rem 0;
     font-size: 1.8rem; }
   .section__skills__list-item li {
     font-size: 1.6rem; }
+
+.section__about-me {
+  border: 1px solid white; }
 
 *,
 *::after,
@@ -175,5 +170,13 @@ body {
   font-weight: 700;
   color: #fff;
   text-align: center;
-  margin-bottom: 6rem;
-  margin-top: 1rem; }
+  margin-bottom: 10rem;
+  margin-top: 10rem; }
+
+.text-content {
+  text-align: center;
+  padding-bottom: 10rem;
+  margin: 0 auto;
+  color: white;
+  max-width: 80rem;
+  font-size: 1.6rem; }

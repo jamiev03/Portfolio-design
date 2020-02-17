@@ -13,7 +13,7 @@
     &__text {
         position: absolute;
         top: 20rem;
-        left: 23rem;
+        left: 33rem;
 
         &-h1 {
             font-size: 8rem;
@@ -22,5 +22,26 @@
         &-h3 {
             font-size: 3rem;
         }
+    }
+
+    &__about-me-text {
+        position: absolute;
+        top: 38rem;
+        right: 38rem;
+        width: 40rem;
+        font-size: 1.6rem;
+        z-index: 2;
+    }
+}
+
+.section__projects {
+    margin-top: 8rem;
+
+    &-h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        
     }
 }

@@ -34,6 +34,9 @@
   background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
   z-index: 1;
   overflow: hidden; }
+  @media (min-width: 800px) {
+    .circle {
+      right: 10rem; } }
 
 .section__projects__cards {
   display: flex;
@@ -113,13 +116,16 @@
     top: 20rem;
     left: 33rem; }
     .header-hero__text-h1 {
-      font-size: 8rem; }
+      font-size: 1rem; }
+      @media (min-width: 500px) {
+        .header-hero__text-h1 {
+          font-size: 8rem; } }
     .header-hero__text-h3 {
       font-size: 3rem; }
   .header-hero__about-me-text {
     position: absolute;
     top: 38rem;
-    right: 38rem;
+    right: 28rem;
     width: 40rem;
     font-size: 1.6rem;
     z-index: 2; }

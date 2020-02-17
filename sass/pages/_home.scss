@@ -16,7 +16,11 @@
         left: 33rem;
 
         &-h1 {
-            font-size: 8rem;
+            font-size: 1rem;
+
+            @include atSmall {
+                font-size: 8rem;
+            }
         }
 
         &-h3 {
@@ -27,7 +31,7 @@
     &__about-me-text {
         position: absolute;
         top: 38rem;
-        right: 38rem;
+        right: 28rem;
         width: 40rem;
         font-size: 1.6rem;
         z-index: 2;

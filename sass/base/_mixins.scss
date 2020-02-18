@@ -1,23 +1,23 @@
 @mixin atSmall {
-    @media (min-width: 500px) {
+    @media screen and (max-width: 500px) {
         @content;
     }
 }
 
 @mixin atMedium {
-    @media (min-width: 800px) {
+    @media screen and (max-width: 768px) {
         @content;
     }
 }
 
 @mixin atLarge {
-    @media (min-width: 1010px) {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
         @content;
     }
 }
 
-@mixin atLarge {
-    @media only screen and (min-width: 1010px) {
+@mixin atXLarge {
+    @media screen and (max-width: 500px) {
         @content;
     }
 }

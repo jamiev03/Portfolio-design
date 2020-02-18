@@ -1,3 +1,6 @@
+.section__hero {
+    position: relative;
+}
 .header-hero {
     background: -webkit-linear-gradient(110deg, #ff6464 50%, #5ac8fa 50%);
     background: -o-linear-gradient(110deg, #ff6464 50%, #5ac8fa 50%);
@@ -12,29 +15,44 @@
 
     &__text {
         position: absolute;
-        top: 20rem;
+        top: 10rem;
         left: 33rem;
+        z-index: 5;
+
+        @include atLarge {
+            top: 12rem;
+            left: 23rem;
+        }
 
         &-h1 {
-            font-size: 1rem;
+            font-size: 8rem;
 
-            @include atSmall {
-                font-size: 8rem;
+            @include atLarge {
+                font-size: 7.5rem;
             }
         }
 
         &-h3 {
             font-size: 3rem;
+
+            @include atLarge {
+                font-size: 2.5rem;
+            }
         }
     }
 
     &__about-me-text {
         position: absolute;
-        top: 38rem;
+        top: 28rem;
         right: 28rem;
         width: 40rem;
         font-size: 1.6rem;
         z-index: 2;
+
+        @include atLarge {
+            top: 36rem;
+            right: 6rem;
+        }
     }
 }
 

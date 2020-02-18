@@ -6,6 +6,9 @@
   .nav__logo-h2 {
     font-size: 3.5rem;
     font-weight: 700; }
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+      .nav__logo-h2 {
+        font-size: 3rem; } }
   .nav__ul {
     display: flex;
     list-style: none; }
@@ -14,6 +17,9 @@
       margin-right: 3.5rem;
       color: #1c1c1c;
       font-size: 2rem; }
+      @media screen and (min-width: 769px) and (max-width: 1170px) {
+        .nav__ul-li a {
+          font-size: 1.8rem; } }
     .nav__ul-li a:hover {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
       background-position: bottom;
@@ -27,16 +33,19 @@
   border-radius: 50%;
   width: 300px;
   height: 300px;
-  top: 24rem;
+  top: 16rem;
   right: 59rem;
   background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
   background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);
   background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
   z-index: 1;
   overflow: hidden; }
-  @media (min-width: 800px) {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
     .circle {
-      right: 10rem; } }
+      right: 10rem;
+      top: 30rem;
+      width: 180px;
+      height: 180px; } }
 
 .section__projects__cards {
   display: flex;
@@ -100,6 +109,9 @@
     background-color: #1c1c1c;
     color: #fff; }
 
+.section__hero {
+  position: relative; }
+
 .header-hero {
   background: -webkit-linear-gradient(110deg, #ff6464 50%, #5ac8fa 50%);
   background: -o-linear-gradient(110deg, #ff6464 50%, #5ac8fa 50%);
@@ -113,22 +125,34 @@
   position: relative; }
   .header-hero__text {
     position: absolute;
-    top: 20rem;
-    left: 33rem; }
+    top: 10rem;
+    left: 33rem;
+    z-index: 5; }
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+      .header-hero__text {
+        top: 12rem;
+        left: 23rem; } }
     .header-hero__text-h1 {
-      font-size: 1rem; }
-      @media (min-width: 500px) {
+      font-size: 8rem; }
+      @media screen and (min-width: 769px) and (max-width: 1170px) {
         .header-hero__text-h1 {
-          font-size: 8rem; } }
+          font-size: 7.5rem; } }
     .header-hero__text-h3 {
       font-size: 3rem; }
+      @media screen and (min-width: 769px) and (max-width: 1170px) {
+        .header-hero__text-h3 {
+          font-size: 2.5rem; } }
   .header-hero__about-me-text {
     position: absolute;
-    top: 38rem;
+    top: 28rem;
     right: 28rem;
     width: 40rem;
     font-size: 1.6rem;
     z-index: 2; }
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+      .header-hero__about-me-text {
+        top: 36rem;
+        right: 6rem; } }
 
 .section__projects {
   margin-top: 8rem; }

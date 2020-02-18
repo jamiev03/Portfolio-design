@@ -9,6 +9,10 @@
         &-h2 {
             font-size: 3.5rem;
             font-weight: 700;
+
+            @include atLarge {
+                font-size: 3rem;
+            }
         }
     }
 
@@ -21,6 +25,10 @@
             margin-right: 3.5rem;
             color: $color-primary-dark;
             font-size: 2rem;
+
+            @include atLarge {
+                font-size: 1.8rem;
+            }
         }
 
         &-li a:hover {

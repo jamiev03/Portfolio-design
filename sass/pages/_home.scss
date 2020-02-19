@@ -19,13 +19,22 @@
         left: 33rem;
         z-index: 5;
 
-        @include atLarge {
+        @include atMedium {
             top: 12rem;
-            left: 23rem;
+            left: 10rem;
+        }
+
+        @include atLarge {
+            top: 13rem;
+            left: 18rem;
         }
 
         &-h1 {
             font-size: 8rem;
+
+            @include atMedium {
+                font-size: 7rem;
+            }
 
             @include atLarge {
                 font-size: 7.5rem;
@@ -34,6 +43,10 @@
 
         &-h3 {
             font-size: 3rem;
+
+            @include atMedium {
+                font-size: 2.6rem;
+            }
 
             @include atLarge {
                 font-size: 2.5rem;
@@ -48,6 +61,11 @@
         width: 40rem;
         font-size: 1.6rem;
         z-index: 2;
+
+        @include atMedium {
+            top: 36rem;
+            right: 6rem;
+        }
 
         @include atLarge {
             top: 36rem;

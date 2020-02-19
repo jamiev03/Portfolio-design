@@ -11,6 +11,13 @@
     z-index: 1;
     overflow: hidden;
 
+    @include atMedium {
+        top: 32rem;
+        left: 40rem;
+        width: 180px;
+        height: 180px;
+    }
+
     @include atLarge {
         right: 10rem;
         top: 30rem;

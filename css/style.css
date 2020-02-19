@@ -6,9 +6,12 @@
   .nav__logo-h2 {
     font-size: 3.5rem;
     font-weight: 700; }
+    @media screen and (max-width: 768px) {
+      .nav__logo-h2 {
+        font-size: 2.2rem; } }
     @media screen and (min-width: 769px) and (max-width: 1170px) {
       .nav__logo-h2 {
-        font-size: 3rem; } }
+        font-size: 2.6rem; } }
   .nav__ul {
     display: flex;
     list-style: none; }
@@ -17,9 +20,13 @@
       margin-right: 3.5rem;
       color: #1c1c1c;
       font-size: 2rem; }
+      @media screen and (max-width: 768px) {
+        .nav__ul-li a {
+          font-size: 1.6rem; } }
       @media screen and (min-width: 769px) and (max-width: 1170px) {
         .nav__ul-li a {
-          font-size: 1.8rem; } }
+          font-size: 1.8rem;
+          margin-right: 2.5rem; } }
     .nav__ul-li a:hover {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
       background-position: bottom;
@@ -40,6 +47,12 @@
   background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
   z-index: 1;
   overflow: hidden; }
+  @media screen and (max-width: 768px) {
+    .circle {
+      top: 32rem;
+      left: 40rem;
+      width: 180px;
+      height: 180px; } }
   @media screen and (min-width: 769px) and (max-width: 1170px) {
     .circle {
       right: 10rem;
@@ -128,17 +141,27 @@
     top: 10rem;
     left: 33rem;
     z-index: 5; }
-    @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @media screen and (max-width: 768px) {
       .header-hero__text {
         top: 12rem;
-        left: 23rem; } }
+        left: 10rem; } }
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+      .header-hero__text {
+        top: 13rem;
+        left: 18rem; } }
     .header-hero__text-h1 {
       font-size: 8rem; }
+      @media screen and (max-width: 768px) {
+        .header-hero__text-h1 {
+          font-size: 7rem; } }
       @media screen and (min-width: 769px) and (max-width: 1170px) {
         .header-hero__text-h1 {
           font-size: 7.5rem; } }
     .header-hero__text-h3 {
       font-size: 3rem; }
+      @media screen and (max-width: 768px) {
+        .header-hero__text-h3 {
+          font-size: 2.6rem; } }
       @media screen and (min-width: 769px) and (max-width: 1170px) {
         .header-hero__text-h3 {
           font-size: 2.5rem; } }
@@ -149,6 +172,10 @@
     width: 40rem;
     font-size: 1.6rem;
     z-index: 2; }
+    @media screen and (max-width: 768px) {
+      .header-hero__about-me-text {
+        top: 36rem;
+        right: 6rem; } }
     @media screen and (min-width: 769px) and (max-width: 1170px) {
       .header-hero__about-me-text {
         top: 36rem;

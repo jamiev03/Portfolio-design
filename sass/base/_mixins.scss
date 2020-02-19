@@ -17,7 +17,7 @@
 }
 
 @mixin atXLarge {
-    @media screen and (max-width: 500px) {
+    @media screen and (min-width: 1171px) and (max-width: 2048px) {
         @content;
     }
 }

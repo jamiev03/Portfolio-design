@@ -39,6 +39,12 @@
             @include atLarge {
                 font-size: 7.5rem;
             }
+
+            @include atXLarge {
+                font-size: 10rem;
+            }
+
+            
         }
 
         &-h3 {
@@ -70,6 +76,13 @@
         @include atLarge {
             top: 36rem;
             right: 6rem;
+        }
+
+        @include atXLarge {
+            top: 34rem;
+            right: 26rem;
+            width: 46rem;
+            font-size: 1.8rem;
         }
     }
 }

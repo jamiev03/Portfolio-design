@@ -21,7 +21,7 @@
 
         @include atMedium {
             top: 12rem;
-            left: 10rem;
+            left: 6%;
         }
 
         @include atLarge {
@@ -66,12 +66,12 @@
         right: 28rem;
         width: 40rem;
         font-size: 1.6rem;
-        padding: 2rem;
         z-index: 2;
 
         @include atMedium {
-            top: 36rem;
-            right: 6rem;
+            top: 38.5rem;
+            right: 3%;
+            text-align: left;
         }
 
         @include atLarge {

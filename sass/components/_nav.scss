@@ -5,11 +5,21 @@
     padding: 1.5rem .5rem 2rem 3rem;
     flex-wrap: wrap;
 
+    @include atSmall {
+        justify-content: center;
+        padding: 1.8rem 0;
+    }
+
     &__logo {
 
         &-h2 {
             font-size: 3.5rem;
             font-weight: 700;
+
+            @include atSmall {
+                font-size: 2.2rem;
+                margin-left: -1rem;
+            }
 
             @include atMedium {
                 font-size: 2.2rem;
@@ -25,11 +35,20 @@
         display: flex;
         list-style: none;
 
+        @include atSmall {
+            justify-content: space-around;
+        }
+
         &-li a {
             text-decoration: none;
             margin-right: 3.5rem;
             color: $color-primary-dark;
             font-size: 2rem;
+
+            @include atSmall {
+                font-size: 1.6rem;
+                margin-right: 1.4rem;
+            }
 
             @include atMedium {
                 font-size: 1.6rem;

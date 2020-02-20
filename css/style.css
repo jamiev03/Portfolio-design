@@ -4,9 +4,17 @@
   align-items: center;
   padding: 1.5rem .5rem 2rem 3rem;
   flex-wrap: wrap; }
+  @media screen and (min-width: 359px) and (max-width: 500px) {
+    .nav {
+      justify-content: center;
+      padding: 1.8rem 0; } }
   .nav__logo-h2 {
     font-size: 3.5rem;
     font-weight: 700; }
+    @media screen and (min-width: 359px) and (max-width: 500px) {
+      .nav__logo-h2 {
+        font-size: 2.2rem;
+        margin-left: -1rem; } }
     @media screen and (min-width: 501px) and (max-width: 768px) {
       .nav__logo-h2 {
         font-size: 2.2rem; } }
@@ -16,11 +24,18 @@
   .nav__ul {
     display: flex;
     list-style: none; }
+    @media screen and (min-width: 359px) and (max-width: 500px) {
+      .nav__ul {
+        justify-content: space-around; } }
     .nav__ul-li a {
       text-decoration: none;
       margin-right: 3.5rem;
       color: #1c1c1c;
       font-size: 2rem; }
+      @media screen and (min-width: 359px) and (max-width: 500px) {
+        .nav__ul-li a {
+          font-size: 1.6rem;
+          margin-right: 1.4rem; } }
       @media screen and (min-width: 501px) and (max-width: 768px) {
         .nav__ul-li a {
           font-size: 1.6rem;
@@ -51,10 +66,10 @@
   overflow: hidden; }
   @media screen and (min-width: 501px) and (max-width: 768px) {
     .circle {
-      top: 32rem;
-      left: 40rem;
-      width: 140px;
-      height: 140px; } }
+      top: 34rem;
+      left: 28rem;
+      width: 120px;
+      height: 120px; } }
   @media screen and (min-width: 769px) and (max-width: 1170px) {
     .circle {
       right: 10rem;
@@ -152,7 +167,7 @@
     @media screen and (min-width: 501px) and (max-width: 768px) {
       .header-hero__text {
         top: 12rem;
-        left: 10rem; } }
+        left: 6%; } }
     @media screen and (min-width: 769px) and (max-width: 1170px) {
       .header-hero__text {
         top: 13rem;
@@ -182,12 +197,12 @@
     right: 28rem;
     width: 40rem;
     font-size: 1.6rem;
-    padding: 2rem;
     z-index: 2; }
     @media screen and (min-width: 501px) and (max-width: 768px) {
       .header-hero__about-me-text {
-        top: 36rem;
-        right: 6rem; } }
+        top: 38.5rem;
+        right: 3%;
+        text-align: left; } }
     @media screen and (min-width: 769px) and (max-width: 1170px) {
       .header-hero__about-me-text {
         top: 36rem;
@@ -239,7 +254,7 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   padding: 4rem; }
-  @media screen and (min-width: 368px) and (max-width: 500px) {
+  @media screen and (min-width: 359px) and (max-width: 500px) {
     body {
       padding: 1.2rem; } }
   @media screen and (min-width: 501px) and (max-width: 768px) {

@@ -16,7 +16,7 @@
     &__text {
         position: absolute;
         top: 10rem;
-        left: 33rem;
+        left: 20%;
         z-index: 5;
 
         @include atMedium {
@@ -66,6 +66,7 @@
         right: 28rem;
         width: 40rem;
         font-size: 1.6rem;
+        padding: 2rem;
         z-index: 2;
 
         @include atMedium {

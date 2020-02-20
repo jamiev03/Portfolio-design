@@ -22,6 +22,11 @@ body {
     padding: 4rem;
 
     @include atSmall {
-        padding: 2rem;
+        padding: 1.2rem;
     }
+
+    @include atMedium {
+        padding: 3rem;
+    }
+
 }

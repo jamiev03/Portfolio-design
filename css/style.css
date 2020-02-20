@@ -151,9 +151,39 @@
     background-color: #1c1c1c;
     color: #fff; }
 
-.fab {
-  font-size: 4.5rem;
-  color: #fff; }
+.fab-hero {
+  font-size: 6.5rem;
+  color: #1c1c1c;
+  transition: .3s; }
+  @media screen and (min-width: 359px) and (max-width: 500px) {
+    .fab-hero {
+      font-size: 3.8rem; } }
+  @media screen and (min-width: 501px) and (max-width: 768px) {
+    .fab-hero {
+      font-size: 4.8rem; } }
+  .fab-hero:hover {
+    color: white; }
+
+.fab-footer {
+  font-size: 6.5rem;
+  color: #fff;
+  transition: .3s; }
+  @media screen and (min-width: 359px) and (max-width: 500px) {
+    .fab-footer {
+      font-size: 3.8rem; } }
+  @media screen and (min-width: 501px) and (max-width: 768px) {
+    .fab-footer {
+      font-size: 4.8rem; } }
+  .fab-footer-blue:hover {
+    color: #5ac8fa; }
+  .fab-footer-pink:hover {
+    color: #ff6464; }
+  .fab-footer-yellow {
+    transition: all ease-in-out; }
+    .fab-footer-yellow:hover {
+      background: linear-gradient(to right, yellow 0%, orange 100%, red 95%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
 
 .section__hero {
   position: relative; }
@@ -221,12 +251,12 @@
     @media screen and (min-width: 359px) and (max-width: 500px) {
       .header-hero__about-me-text {
         width: 90%;
-        top: 34.5rem;
+        top: 32rem;
         right: 3%;
         font-size: 1.5rem; } }
     @media screen and (min-width: 501px) and (max-width: 768px) {
       .header-hero__about-me-text {
-        top: 38.5rem;
+        top: 34rem;
         right: 3%;
         text-align: left; } }
     @media screen and (min-width: 769px) and (max-width: 1170px) {
@@ -239,6 +269,26 @@
         right: 26rem;
         width: 46rem;
         font-size: 1.8rem; } }
+  .header-hero__social-media {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 20rem;
+    left: 2%;
+    top: 86%; }
+    @media screen and (min-width: 359px) and (max-width: 500px) {
+      .header-hero__social-media {
+        top: 91%; } }
+    @media screen and (min-width: 501px) and (max-width: 768px) {
+      .header-hero__social-media {
+        top: 89%; } }
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+      .header-hero__social-media {
+        width: 24rem; } }
+    @media screen and (min-width: 1171px) and (max-width: 2048px) {
+      .header-hero__social-media {
+        width: 27rem;
+        left: 1%; } }
 
 .section__projects {
   margin-top: 8rem; }

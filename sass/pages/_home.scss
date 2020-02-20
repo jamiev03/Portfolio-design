@@ -83,13 +83,13 @@
 
         @include atSmall {
             width: 90%;
-            top: 34.5rem;
+            top: 32rem;
             right: 3%;
             font-size: 1.5rem;
         }
 
         @include atMedium {
-            top: 38.5rem;
+            top: 34rem;
             right: 3%;
             text-align: left;
         }
@@ -104,6 +104,32 @@
             right: 26rem;
             width: 46rem;
             font-size: 1.8rem;
+        }
+    }
+
+    &__social-media {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        width: 20rem;
+        left: 2%;
+        top: 86%;
+
+        @include atSmall {
+            top: 91%;
+        }
+
+        @include atMedium {
+            top: 89%;
+        }
+
+        @include atLarge {
+            width: 24rem;
+        }
+
+        @include atXLarge {
+            width: 27rem;
+            left: 1%;
         }
     }
 }

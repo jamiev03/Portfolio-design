@@ -1,4 +1,58 @@
-.fab {
-    font-size: 4.5rem;
+.fab-hero {
+    font-size: 6.5rem;
+    color: #1c1c1c;
+    transition: .3s;
+
+    @include atSmall {
+        font-size: 3.8rem;
+    }
+
+    @include atMedium {
+        font-size: 4.8rem;
+    }
+
+    &:hover {
+        color: white;
+    }
+}
+
+.fab-footer {
+    font-size: 6.5rem;
     color: $color-white;
+    transition: .3s;
+
+    @include atSmall {
+        font-size: 3.8rem;
+    }
+
+    @include atMedium {
+        font-size: 4.8rem;
+    }
+
+    &-blue {
+
+        &:hover {
+            color: #5ac8fa;
+        }
+
+    }
+
+    &-pink {
+
+        &:hover {
+            color: #ff6464;
+        }
+
+    }
+
+    &-yellow {
+        transition: all ease-in-out;
+
+        &:hover {
+            background: linear-gradient(to right,yellow 0%, orange 100%, red 95%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+    }
 }

@@ -19,6 +19,11 @@
         left: 20%;
         z-index: 5;
 
+        @include atSmall {
+            top: 10rem;
+            left: 6%;
+        }
+
         @include atMedium {
             top: 12rem;
             left: 6%;
@@ -31,6 +36,10 @@
 
         &-h1 {
             font-size: 8rem;
+
+            @include atSmall {
+                font-size: 5.5rem;
+            }
 
             @include atMedium {
                 font-size: 7rem;
@@ -50,6 +59,10 @@
         &-h3 {
             font-size: 3rem;
 
+            @include atSmall {
+                font-size: 2.2rem;
+            }
+
             @include atMedium {
                 font-size: 2.6rem;
             }
@@ -67,6 +80,13 @@
         width: 40rem;
         font-size: 1.6rem;
         z-index: 2;
+
+        @include atSmall {
+            width: 90%;
+            top: 34.5rem;
+            right: 3%;
+            font-size: 1.5rem;
+        }
 
         @include atMedium {
             top: 38.5rem;
@@ -116,4 +136,19 @@
 
 .section__about-me {
     border: 1px solid white;
+    padding-bottom: 10rem;
+}
+
+.section__footer {
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    width: 30rem;
+    margin: 0 auto;
+    
+
+    &__social-media {
+        display: flex;
+        justify-content: space-around
+
+    }
 }

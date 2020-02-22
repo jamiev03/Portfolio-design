@@ -185,6 +185,21 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
 
+.modal {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: rgba(49, 49, 49, 0.7); }
+  .modal__content-closeBtn {
+    font-size: 5rem;
+    font-weight: 700; }
+
 .section__hero {
   position: relative; }
 
@@ -330,7 +345,8 @@
 /* Setting the root font-size in order to make the rest of the page easier to style using 'rem' since it will just be a multiple of 10px- this must the be in turn converted to percentage of default 16px in order for accessibility to work properly and make media queries much easier to write */
 html {
   font-size: 62.5%;
-  /* is eaual to 16px - defines 1rem*/ }
+  /* is eaual to 16px - defines 1rem*/
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box;

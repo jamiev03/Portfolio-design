@@ -1,0 +1,22 @@
+.modal {
+    // display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    font-size: 1.6rem;
+    color: $color-white;
+    background-color: rgba(49, 49, 49, 0.7);
+
+    &__content {
+
+
+        &-closeBtn {
+            font-size: 5rem;
+            font-weight: 700;
+        }
+    }
+}

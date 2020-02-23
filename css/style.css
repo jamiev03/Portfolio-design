@@ -186,6 +186,7 @@
       -webkit-text-fill-color: transparent; }
 
 .modal {
+  display: none;
   position: fixed;
   z-index: 10;
   top: 0;
@@ -193,12 +194,24 @@
   height: 100%;
   width: 100%;
   overflow: auto;
-  font-size: 1.6rem;
-  color: #fff;
-  background-color: rgba(49, 49, 49, 0.7); }
-  .modal__content-closeBtn {
-    font-size: 5rem;
-    font-weight: 700; }
+  background-color: rgba(49, 49, 49, 0.75); }
+  .modal__content {
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #1c1c1c;
+    margin: 10% auto;
+    padding: 20px;
+    width: 90%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3); }
+    .modal__content-closeBtn {
+      float: right;
+      display: inline-block;
+      font-size: 5rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all .3s; }
+      .modal__content-closeBtn:hover {
+        color: #666; }
 
 .section__hero {
   position: relative; }

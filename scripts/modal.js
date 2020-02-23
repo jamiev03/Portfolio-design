@@ -37,7 +37,7 @@ document.getElementById("link").onclick = function(e) {
     e.preventDefault();
     document.getElementById("popupdarkbg").style.display = "block";
     document.getElementById("popup").style.display = "block";
-    document.getElementById('popupiframe').src = "/projects/project-1.html";
+    document.getElementById('popupiframe').src = "./projects/project-1.html";
     document.getElementById('popupdarkbg').onclick = function() {
         document.getElementById("popup").style.display = "none";
         document.getElementById("popupdarkbg").style.display = "none";

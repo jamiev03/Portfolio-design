@@ -1,63 +1,80 @@
-.modal {
-    font-size: 62.5%;
-    display: none;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(49, 49, 49, 0.75);
+// .modal {
+//     font-size: 62.5%;
+//     display: none;
+//     position: fixed;
+//     z-index: 10;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     width: 100%;
+//     overflow: auto;
+//     background-color: rgba(49, 49, 49, 0.75);
 
-    &__content {
-        color: $color-white;
-        background-color: #1c1c1c;
-        margin: 10% auto;
-        padding: 20px;
-        width: 90%;
-        box-shadow: 0 5px 8px 0 rgba(0, 0 , 0, .3);
-        animation-name: modalopen;
-        animation-duration: .7s;
+//     &__content {
+//         color: $color-white;
+//         background-color: #1c1c1c;
+//         margin: 10% auto;
+//         padding: 20px;
+//         width: 90%;
+//         box-shadow: 0 5px 8px 0 rgba(0, 0 , 0, .3);
+//         animation-name: modalopen;
+//         animation-duration: .7s;
 
-        @include atXLarge {
-            width: 70%;
-        }
+//         @include atXLarge {
+//             width: 70%;
+//         }
 
-        @keyframes modalopen {
-            from{opacity: 0}
-            to {opacity: 1}
-        }
+//         @keyframes modalopen {
+//             from{opacity: 0}
+//             to {opacity: 1}
+//         }
 
-        &-header {
-            font-size: 2rem;
-        }
+//         &-header {
+//             font-size: 2rem;
+//         }
 
-        &-text {
-            font-size: 1.6rem;
-        }
+//         &-text {
+//             font-size: 1.6rem;
+//         }
 
-        &-footer {
-            font-size: 2rem;
-        }
+//         &-footer {
+//             font-size: 2rem;
+//         }
 
-        &-closeBtn {
-            float: right;
-            font-size: 5rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all .3s;
+//         &-closeBtn {
+//             float: right;
+//             font-size: 5rem;
+//             font-weight: 700;
+//             cursor: pointer;
+//             transition: all .3s;
 
-            &:hover {
-                color: #666;
-            }
-        }
-    }
+//             &:hover {
+//                 color: #666;
+//             }
+//         }
+//     }
+// }
+
+#popup { display: none;
+     position: fixed; top: 12%; left: 15%; width: 70%; height: 70%; 
+     z-index: 10; }
+
+#popup iframe { 
+    width: 100%; 
+    height: 100%; 
+    border: 0; 
 }
-
-#popup { display: none; position: fixed; top: 12%; left: 15%; width: 70%; height: 70%; background-color: white; z-index: 10; }
-#popup iframe { width: 100%; height: 100%; border: 0; }
-#popupdarkbg { position: fixed; z-index: 5; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden; background-color: rgba(0,0,0,.75); display: none; }
+#popupdarkbg { 
+    position: fixed; 
+    z-index: 5; 
+    left: 0; 
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    background-color: rgba(0,0,0,.9); 
+    display: none; 
+}
 
 .test-btn {
     margin: 35px 0 15px 0;

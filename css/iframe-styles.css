@@ -1,0 +1,45 @@
+body {
+background-color: #1c1c1c;
+
+}
+.modal__content {
+font-family: 'Poppins', serif;
+color: #fff;
+background-color: #1c1c1c;
+margin: 0 auto;
+width: 100%;
+animation-name: modalopen;
+animation-duration: 1s;
+backface-visibility: hidden; 
+}
+
+@media screen and (min-width: 1171px) and (max-width: 2048px) {
+.modal__content {
+    width: 70%; } 
+}
+
+@keyframes modalopen {
+from {
+    opacity: 0; }
+to {
+    opacity: 1; } 
+}
+.modal__content-header {
+    font-size: 1.6rem; 
+}
+.modal__content-text {
+    font-size: 1rem; 
+}
+.modal__content-footer {
+    font-size: 1.2rem; 
+}
+.modal__content-closeBtn {
+    float: right;
+    font-size: 5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s; 
+}
+.modal__content-closeBtn:hover {
+    color: #666; 
+}

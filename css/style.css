@@ -186,6 +186,7 @@
       -webkit-text-fill-color: transparent; }
 
 .modal {
+  font-size: 62.5%;
   display: none;
   position: fixed;
   z-index: 10;
@@ -196,16 +197,28 @@
   overflow: auto;
   background-color: rgba(49, 49, 49, 0.75); }
   .modal__content {
-    font-size: 1.6rem;
     color: #fff;
     background-color: #1c1c1c;
     margin: 10% auto;
     padding: 20px;
     width: 90%;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3); }
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3);
+    animation-name: modalopen;
+    animation-duration: .7s; }
+
+@keyframes modalopen {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+    .modal__content-header {
+      font-size: 2rem; }
+    .modal__content-text {
+      font-size: 1.6rem; }
+    .modal__content-footer {
+      font-size: 2rem; }
     .modal__content-closeBtn {
       float: right;
-      display: inline-block;
       font-size: 5rem;
       font-weight: 700;
       cursor: pointer;

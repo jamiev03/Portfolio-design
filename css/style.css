@@ -185,58 +185,19 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
 
-.modal {
-  font-size: 62.5%;
-  display: none;
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-  background-color: rgba(49, 49, 49, 0.75); }
-  .modal__content {
-    color: #fff;
-    background-color: #1c1c1c;
-    margin: 10% auto;
-    padding: 20px;
-    width: 90%;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3);
-    animation-name: modalopen;
-    animation-duration: .7s; }
-    @media screen and (min-width: 1171px) and (max-width: 2048px) {
-      .modal__content {
-        width: 70%; } }
-
-@keyframes modalopen {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-    .modal__content-header {
-      font-size: 2rem; }
-    .modal__content-text {
-      font-size: 1.6rem; }
-    .modal__content-footer {
-      font-size: 2rem; }
-    .modal__content-closeBtn {
-      float: right;
-      font-size: 5rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: all .3s; }
-      .modal__content-closeBtn:hover {
-        color: #666; }
+iframe {
+  -moz-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.4); }
 
 #popup {
   display: none;
   position: fixed;
-  top: 12%;
-  left: 15%;
-  width: 70%;
-  height: 70%;
-  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 80%;
   z-index: 10; }
 
 #popup iframe {
@@ -252,7 +213,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(34, 34, 34, 0.8);
   display: none; }
 
 .test-btn {

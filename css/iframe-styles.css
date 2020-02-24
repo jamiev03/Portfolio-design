@@ -1,7 +1,7 @@
 body {
 background-color: #1c1c1c;
-
 }
+
 .modal__content {
 font-family: 'Poppins', serif;
 color: #fff;
@@ -32,14 +32,4 @@ to {
 }
 .modal__content-footer {
     font-size: 1.2rem; 
-}
-.modal__content-closeBtn {
-    float: right;
-    font-size: 5rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all .3s; 
-}
-.modal__content-closeBtn:hover {
-    color: #666; 
 }

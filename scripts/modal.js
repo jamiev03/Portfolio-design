@@ -33,10 +33,18 @@
 //     }
 // }
 
+document.querySelectorAll('link').forEach(item => {
+  item.addEventListener('click', event => {
+    //handle click
+    
+  })
+})
+
+
 document.getElementById("link").onclick = function(e) {
     e.preventDefault();
+
     let project1 = document.getElementById('popupiframe').src = "./projects/project-1.html";
-    let project2 = document.getElementById('popupiframe-2').src = "./projects/project-2.html";
     document.getElementById("popupdarkbg").style.display = "block";
     document.getElementById("popup").style.display = "block";
     
@@ -46,6 +54,20 @@ document.getElementById("link").onclick = function(e) {
     };
     return false;
   }
+
+  document.getElementById("link-2").onclick = function(e) {
+    e.preventDefault();
+    let project2 = document.getElementById('popupiframe').src = "./projects/project-2.html";
+    document.getElementById("popupdarkbg").style.display = "block";
+    document.getElementById("popup").style.display = "block";
+    
+    document.getElementById('popupdarkbg').onclick = function() {
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("popupdarkbg").style.display = "none";
+    };
+    return false;
+  }
+
   
   window.onkeydown = function(e) {
       if (e.keyCode == 27) {

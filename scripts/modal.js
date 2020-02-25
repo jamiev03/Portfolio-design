@@ -40,7 +40,6 @@ document.querySelectorAll('link').forEach(item => {
   })
 })
 
-
 document.getElementById("link").onclick = function(e) {
     e.preventDefault();
 
@@ -58,6 +57,32 @@ document.getElementById("link").onclick = function(e) {
   document.getElementById("link-2").onclick = function(e) {
     e.preventDefault();
     let project2 = document.getElementById('popupiframe').src = "./projects/project-2.html";
+    document.getElementById("popupdarkbg").style.display = "block";
+    document.getElementById("popup").style.display = "block";
+    
+    document.getElementById('popupdarkbg').onclick = function() {
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("popupdarkbg").style.display = "none";
+    };
+    return false;
+  }
+
+  document.getElementById("link-3").onclick = function(e) {
+    e.preventDefault();
+    let project2 = document.getElementById('popupiframe').src = "./projects/project-3.html";
+    document.getElementById("popupdarkbg").style.display = "block";
+    document.getElementById("popup").style.display = "block";
+    
+    document.getElementById('popupdarkbg').onclick = function() {
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("popupdarkbg").style.display = "none";
+    };
+    return false;
+  }
+
+  document.getElementById("link-4").onclick = function(e) {
+    e.preventDefault();
+    let project2 = document.getElementById('popupiframe').src = "./projects/project-4.html";
     document.getElementById("popupdarkbg").style.display = "block";
     document.getElementById("popup").style.display = "block";
     

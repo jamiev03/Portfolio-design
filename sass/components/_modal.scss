@@ -69,6 +69,18 @@ box-shadow: 0 5px 8px 0 rgba(0, 0 , 0, .4);
     width: 75%; 
     height: 80%; 
     z-index: 10; 
+
+    @include atSmall {
+        width: 100%;
+    }
+
+    @include atMedium {
+        width: 86%;
+    }
+
+    @include atLarge {
+        width: 80%;
+    }
 }
 
 #popup iframe { 
@@ -98,3 +110,4 @@ box-shadow: 0 5px 8px 0 rgba(0, 0 , 0, .4);
     border: 2px solid #fff;
     transition: 0.3s;
 }
+

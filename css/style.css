@@ -154,7 +154,8 @@
 .fab-hero {
   font-size: 6.5rem;
   color: #1c1c1c;
-  transition: .3s; }
+  transition: .3s;
+  cursor: pointer; }
   @media screen and (min-width: 359px) and (max-width: 500px) {
     .fab-hero {
       font-size: 3.8rem; } }
@@ -167,7 +168,8 @@
 .fab-footer {
   font-size: 6.5rem;
   color: #fff;
-  transition: .3s; }
+  transition: .3s;
+  cursor: pointer; }
   @media screen and (min-width: 359px) and (max-width: 500px) {
     .fab-footer {
       font-size: 3.8rem; } }

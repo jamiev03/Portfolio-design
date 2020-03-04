@@ -157,6 +157,13 @@
         &-item li {
             font-size: 1.6rem;
         }
+
+        & ul {
+            
+            @include atSmall {
+                padding-bottom: 3rem;
+            }
+        }
     }
 }
 

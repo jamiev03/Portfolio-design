@@ -107,7 +107,7 @@
     .section__projects__cards .card .face.face1.active1.img-1 {
       background-image: url("../img/project1.png"); }
     .section__projects__cards .card .face.face1.active1.img-2 {
-      background-image: url("../img/business-code-coding-computer-270632.jpg"); }
+      background-image: url("../img/project2.png"); }
     .section__projects__cards .card .face.face1.active1.img-3 {
       background-image: url("../img/iphone-notebook-pen-working-34580.jpg"); }
     .section__projects__cards .card .face.face1.active1.img-4 {
@@ -138,6 +138,8 @@
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
     color: #1c1c1c;
     font-size: 1.6rem; }
+  .section__projects__cards .card .face.face2 .content {
+    padding-top: 2rem; }
   .section__projects__cards .card .face.face2 .content a {
     margin: 35px 0 15px 0;
     display: inline-block;
@@ -164,6 +166,10 @@
       font-size: 4.8rem; } }
   .fab-hero:hover {
     color: white; }
+
+.fab-project {
+  padding: 0 .4rem;
+  font-size: 2.2rem; }
 
 .fab-footer {
   font-size: 6.5rem;

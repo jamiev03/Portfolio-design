@@ -17,14 +17,17 @@
             </div>
             <div class="modal__content-text">
                 <p>A React project based project using a foodie API allowing me to retrieve data and display a recipe based off the search term</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias provident repellendus pariatur eum ad reprehenderit necessitatibus, aperiam, odit doloribus ducimus quae laboriosam totam similique debitis natus quas voluptatem tempore impedit molestiae quia eius aspernatur dicta? Similique a blanditiis non amet consectetur, voluptatem dolor accusantium quae unde animi, id ipsum beatae?</p>
+                <p>Other than a "Hello World" app this was my first try at a functioning React Application. The basic scope of the project was to retrieve external data from an API source and output onto  the page when required. To do this I used an API from Edamame.com which had excellent documentation as how to query data. First set up a general template to input and display text. Then create a recipe component to hold all the data coming from the API. Using an Async function perform API call and fetch data. State was managed using React hooks which took some time to understand. I liked how the state and method are easily identifiable though.</p>
                 <img src="../img/business-code-coding-computer-270632.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet commodi eum, aliquid vero, est hic impedit tempora delectus ratione voluptates ducimus ipsum, eaque rem. Facilis, sit officiis optio tempora in, hic dolore fugiat deleniti explicabo cupiditate modi necessitatibus illo. Magni blanditiis veritatis pariatur illo reprehenderit facilis nemo! Consectetur animi iste commodi quisquam mollitia natus beatae neque suscipit fugiat facere ullam, dolor architecto velit provident aliquid a vitae? Atque quas doloremque sapiente dignissimos fugiat commodi nesciunt sunt nobis quibusdam nihil. Debitis sequi, aut ullam alias dolor vero, laudantium incidunt accusamus dicta eveniet quaerat quos aliquid odio porro perspiciatis in architecto fugit.</p>
+                <p>Now Recipe component displaying data sent from App.js  through props. I found deconstructuring the props made for less and cleaner code. Within the recipe component I then return a div and ul  listing  the title, ingredients, calories and an image. Returning to App.js the recipes are now displayed by mapping over the recipes array and returning Recipe </p>
+                
+                <p>Lastly I learned several ways of styling such as inline and style variables but found the module method to be most practical for me. Allowing each component to have its own css file and writing css as I normally would. Using imported fonts and a general card layout I came up with a simple and modern design.</p>
             </div>
             <div class="modal__content-footer">
                 <h3 class="modal__content-footer-h3">
-                    Modal footer
+                    <a href="#">Live Demo</a>
                 </h3>
+                <a href="#"><i class="fab fab-hero fa-github"></i></a>
             </div>
         </div>
     </section>
